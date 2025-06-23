@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            font-family: 'Inter',sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        .container{
+            /* display: flex;
+            flex-direction: column;
+            position: relative;
+            background-color: #2d3748;
+            border-radius: 15px;
+            width: 90px; */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 25px;
+            position: absolute;
+            width: 1287px;
+            background-color: #2d3748;
+            box-shadow: 0 2px 4px;
+        }
+        .header .logo{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: green;
+        }
+        .header ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .header ul li{
+            margin: left;         
+        }
+        .header ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        .header ul li a:hover{
+            color: aquamarine;
+        }
+        .section{
+            display: flex;
+            margin-top: 90px;
+            position: relative;
+            margin: right;
+        }
+        .about{
+            display: flex;
+            position: relative;
+        }
+        .contain{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: auto;
+            padding: 100px 180px; 
+            flex-direction: column;
+        }
+         .hero-content{
+            flex: 1px;
+            min-width: 30opx;
+        }
+        .hero-content p{
+            font-size: 1.2rem;
+            color: ;
+            margin-bottom: 5px;
+        }
+        .image{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 400px;
+            min-width: 300px;
+        }
+        .image .profile{
+            position: relative;
+            width: 280px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 50px;
+        } 
+        .image .image-bg{
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            background-color: #63b3ed;
+            border-radius: 50px 50px 50px 50px / 60px 60px 40px 40px;
+            transform: rotate(13deg);
+            /* z-index: 1; */
+            max-width: 400px;
+            max-height: 400px;
+        }
+        .nav-link{
+            transition: color 0.3s ease;
+            color: white; 
+        }
+        .nav-link:hover{
+            color: #63b3ed;
+
+        }
+        .btn{
+            background-color: #63b3ed;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            box-shadow:  0 4px 6px black;
+        }
+        .btn:hover{
+            background-color: #4299e1;
+        }
+        .card{
+           background-color: #2d3748;
+            padding: 24px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            box-shadow:  0 4px 6px black; 
+        }
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+            <div class="logo">My Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="section">
+        <div class="contain" >
+            <h1 class="text">Hi, I'm<span>Sudeep Bera</span></h1>
+            <p class="text">A passionate Web Developer creating beutiful and functional websites.</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+        <div class="image">
+            <div class="image-bg"></div>
+            <img src="C:\Users\Acer\Downloads\job.jpg" class="profile" alt="">
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="contain">
+            <h2>About Me</h2>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique optio saepe unde, odio ea rerum! Eos quidem sapiente officiis possimus.</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
